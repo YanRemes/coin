@@ -1,0 +1,42 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Hide scrollbars caused by the larger background */
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url('upc.jpeg');
+    
+    /* Full height and width */
+    height: 100%;
+    width: 100%;
+    
+    /* Contain the image so the whole thing is visible */
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    /* Adjust position for the new sizing */
+    position: relative; /* Set position relative so that the button can be absolutely positioned within */
+  }
+  
+  .buy-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    
+    /* Position the button inside the computer screen, adjust as necessary */
+    position: absolute;
+    top: 45%; /* You may need to adjust this value */
+    left: 46%; /* You may need to adjust this value */
+    transform: translate(-50%, -50%); /* Center the button */
+  }
+  
