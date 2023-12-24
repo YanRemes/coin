@@ -43,5 +43,20 @@ body, html {
   @keyframes blink {
     50% { opacity: 0; }
   }
+
+  @media (max-width: 600px) {
+    .terminal {
+      font-size: 7px; /* Smaller font size for smaller screens */
+      padding: 5px; /* Less padding to take up less space */
+      top: 46.5%; /* Adjust top position if necessary */
+      left: 51%; /* Adjust left position if necessary */
+      transform: translate(-70%, -40%);
+      width: 35%; /* Use more width for better readability */
+    }
+  
+    .cursor {
+      height: 15px; /* Smaller cursor for smaller screens */
+    }
+  }
   
   
