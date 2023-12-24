@@ -1,4 +1,4 @@
-
+/* styles.css */
 body, html {
     height: 100%;
     margin: 0;
@@ -6,37 +6,42 @@ body, html {
   }
   
   .bg-image {
-    /* The image used */
     background-image: url('upc.jpeg');
-    
-    /* Full height and width */
     height: 100%;
     width: 100%;
-    
-    /* Contain the image so the whole thing is visible */
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    
-    /* Adjust position for the new sizing */
-    position: relative; /* Set position relative so that the button can be absolutely positioned within */
+    position: relative;
   }
   
-  .buy-button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    
-    /* Position the button inside the computer screen, adjust as necessary */
+  .terminal {
     position: absolute;
-    top: 45%; /* You may need to adjust this value */
-    left: 46%; /* You may need to adjust this value */
-    transform: translate(-50%, -50%); /* Center the button */
+    top: 45%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    background: black;
+    color: limegreen;
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    white-space: pre-wrap;
+    word-break: break-word;
   }
+  
+  .cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: limegreen;
+    margin-left: 5px;
+    animation: blink 1s steps(1) infinite;
+  }
+  
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  
   
