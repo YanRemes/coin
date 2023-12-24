@@ -2,7 +2,7 @@
 body, html {
     height: 100%;
     margin: 0;
-    overflow: hidden; /* Hide scrollbars caused by the larger background */
+    overflow: hidden; 
   }
   
   .bg-image {
@@ -46,16 +46,16 @@ body, html {
 
   @media (max-width: 600px) {
     .terminal {
-      font-size: 7px; /* Smaller font size for smaller screens */
-      padding: 5px; /* Less padding to take up less space */
-      top: 46.5%; /* Adjust top position if necessary */
-      left: 51%; /* Adjust left position if necessary */
+      font-size: 7px; 
+      padding: 5px;
+      top: 46.5%; 
+      left: 51%; 
       transform: translate(-70%, -40%);
-      width: 35%; /* Use more width for better readability */
+      width: 35%; 
     }
   
     .cursor {
-      height: 15px; /* Smaller cursor for smaller screens */
+      height: 15px;
     }
   }
   
